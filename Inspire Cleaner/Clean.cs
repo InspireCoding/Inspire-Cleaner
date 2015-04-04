@@ -5,16 +5,22 @@ using System.IO;
 using System.Text;
 using System.Windows.Forms;
 
+/// <summary>
+/// The class that contains all the functions used in InspireCleaner
+/// </summary>
     public class Clean
     {
         public static void BotKiller()
         {
+            // Open up the registry for \CurrentVersion\Run\
             RegistryKey RegKey = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run", true);
+
             for (int i = 0; i < RegKey.GetValueNames().Length; i++)
             {
                 try
                 {
-                    if (RegKey.GetValueNames()[i].ToString() != "NoIPDUCv4" && RegKey.GetValueNames()[i].ToString() != "Skype")
+                    // If the registry value is NoIPDUCv4 (Free DNS Software), delete the startup registry key.
+                    if (RegKey.GetValueNames()[i].ToString() != "NoIPDUCv4")
                     {
                         RegKey.SetValue(RegKey.GetValueNames()[i].ToString(), "");
                     }
@@ -31,10 +37,11 @@ using System.Windows.Forms;
 
         public class Fix
         {
-            public static void TMGR()
+            public static void enableTaskManager()
             {
                 try
                 {
+                    // Set the registry key for DisableTaskMgr to 0 (enable task manager)
                     RegistryKey key = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System");
                     key.SetValue("DisableTaskMgr", 0);
                 }
@@ -47,12 +54,13 @@ using System.Windows.Forms;
                 MessageBox.Show("Task Manager has been repaired!", "Inspire Cleaner", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            public static void HOSTS()
+            public static void repairHOSTS()
             {
                 try
                 {
+                    // Create a new directory for the current host file and move it in there, so a new HOSTS file is automatically created.
                     Directory.CreateDirectory(@"C:\windows\system32\drivers\etc\old\");
-                    File.Move(@"C:\windows\system32\drivers\etc\hosts", @"C:\windows\system32\drivers\etc\old\hosts");
+                    File.Move(@"C:\windows\system32\drivers\etc\hosts", @"C:\windows\system32\drivers\etc\old\hosts_old");
                 }
                 catch
                 {
@@ -62,10 +70,11 @@ using System.Windows.Forms;
                 MessageBox.Show(@"HOSTS file has been repaired! - Old file stored in C:\windows\system32\drivers\etc\old\", "Inspire Cleaner", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            public static void CMD()
+            public static void enableCMD()
             {
                 try
                 {
+                    // Set the DisableCMD registry key to 0 (Enable CMD)
                     RegistryKey key = Registry.CurrentUser.CreateSubKey("SOFTWARE\\Policies\\Microsoft\\Windows\\System");
                     key.SetValue("DisableCMD", 0);
                 }
@@ -77,7 +86,13 @@ using System.Windows.Forms;
                 MessageBox.Show("CMD has been repaired!", "Inspire Cleaner", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            public static void RE()
+            public static void enableLua()
+            {
+                // Set the EnableLua registry key to 1 (Enable Lua)
+                RegistryKey key = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System");
+                key.SetValue("EnableLua", 1);
+            }
+            public static void enableRegEdit()
             {
                 try
                 {
@@ -90,7 +105,7 @@ using System.Windows.Forms;
                     MessageBox.Show("Unable to repair Reg Edit.", "Inspire Cleaner", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                MessageBox.Show(@"Reg Edit has been repaired!", "Inspire Cleaner", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Reg Edit has been repaired!", "Inspire Cleaner", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

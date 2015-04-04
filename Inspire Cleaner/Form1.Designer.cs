@@ -63,12 +63,11 @@
             this.monoFlat_ThemeContainer1.Padding = new System.Windows.Forms.Padding(10, 70, 10, 9);
             this.monoFlat_ThemeContainer1.RoundCorners = true;
             this.monoFlat_ThemeContainer1.Sizable = true;
-            this.monoFlat_ThemeContainer1.Size = new System.Drawing.Size(539, 419);
+            this.monoFlat_ThemeContainer1.Size = new System.Drawing.Size(500, 413);
             this.monoFlat_ThemeContainer1.SmartBounds = true;
             this.monoFlat_ThemeContainer1.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultLocation;
             this.monoFlat_ThemeContainer1.TabIndex = 0;
             this.monoFlat_ThemeContainer1.Text = "Inspire Cleaner";
-            this.monoFlat_ThemeContainer1.Click += new System.EventHandler(this.monoFlat_ThemeContainer1_Click);
             // 
             // monoFlat_LinkLabel2
             // 
@@ -78,7 +77,7 @@
             this.monoFlat_LinkLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.monoFlat_LinkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.monoFlat_LinkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(41)))), ((int)(((byte)(42)))));
-            this.monoFlat_LinkLabel2.Location = new System.Drawing.Point(438, 389);
+            this.monoFlat_LinkLabel2.Location = new System.Drawing.Point(400, 383);
             this.monoFlat_LinkLabel2.Name = "monoFlat_LinkLabel2";
             this.monoFlat_LinkLabel2.Size = new System.Drawing.Size(78, 15);
             this.monoFlat_LinkLabel2.TabIndex = 5;
@@ -95,7 +94,7 @@
             this.monoFlat_LinkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.monoFlat_LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.monoFlat_LinkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(41)))), ((int)(((byte)(42)))));
-            this.monoFlat_LinkLabel1.Location = new System.Drawing.Point(431, 369);
+            this.monoFlat_LinkLabel1.Location = new System.Drawing.Point(393, 363);
             this.monoFlat_LinkLabel1.Name = "monoFlat_LinkLabel1";
             this.monoFlat_LinkLabel1.Size = new System.Drawing.Size(91, 15);
             this.monoFlat_LinkLabel1.TabIndex = 4;
@@ -132,10 +131,9 @@
             this.monoFlat_Panel1.Location = new System.Drawing.Point(13, 96);
             this.monoFlat_Panel1.Name = "monoFlat_Panel1";
             this.monoFlat_Panel1.Padding = new System.Windows.Forms.Padding(5);
-            this.monoFlat_Panel1.Size = new System.Drawing.Size(514, 253);
+            this.monoFlat_Panel1.Size = new System.Drawing.Size(474, 253);
             this.monoFlat_Panel1.TabIndex = 2;
             this.monoFlat_Panel1.Text = "monoFlat_Panel1";
-            this.monoFlat_Panel1.Click += new System.EventHandler(this.monoFlat_Panel1_Click);
             // 
             // monoFlat_Button9
             // 
@@ -143,7 +141,7 @@
             this.monoFlat_Button9.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.monoFlat_Button9.Image = null;
             this.monoFlat_Button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.monoFlat_Button9.Location = new System.Drawing.Point(421, 156);
+            this.monoFlat_Button9.Location = new System.Drawing.Point(380, 156);
             this.monoFlat_Button9.Name = "monoFlat_Button9";
             this.monoFlat_Button9.Size = new System.Drawing.Size(85, 40);
             this.monoFlat_Button9.TabIndex = 10;
@@ -157,7 +155,7 @@
             this.ProcessName.Font = new System.Drawing.Font("Tahoma", 11F);
             this.ProcessName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(183)))), ((int)(((byte)(191)))));
             this.ProcessName.Image = null;
-            this.ProcessName.Location = new System.Drawing.Point(301, 155);
+            this.ProcessName.Location = new System.Drawing.Point(260, 155);
             this.ProcessName.MaxLength = 32767;
             this.ProcessName.Multiline = false;
             this.ProcessName.Name = "ProcessName";
@@ -174,7 +172,7 @@
             this.monoFlat_Button8.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.monoFlat_Button8.Image = null;
             this.monoFlat_Button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.monoFlat_Button8.Location = new System.Drawing.Point(301, 202);
+            this.monoFlat_Button8.Location = new System.Drawing.Point(260, 202);
             this.monoFlat_Button8.Name = "monoFlat_Button8";
             this.monoFlat_Button8.Size = new System.Drawing.Size(205, 41);
             this.monoFlat_Button8.TabIndex = 8;
@@ -188,7 +186,7 @@
             this.monoFlat_Button6.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.monoFlat_Button6.Image = null;
             this.monoFlat_Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.monoFlat_Button6.Location = new System.Drawing.Point(301, 108);
+            this.monoFlat_Button6.Location = new System.Drawing.Point(260, 108);
             this.monoFlat_Button6.Name = "monoFlat_Button6";
             this.monoFlat_Button6.Size = new System.Drawing.Size(205, 41);
             this.monoFlat_Button6.TabIndex = 6;
@@ -200,7 +198,7 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(301, 8);
+            this.listBox1.Location = new System.Drawing.Point(260, 8);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(205, 94);
             this.listBox1.TabIndex = 5;
@@ -281,7 +279,7 @@
             this.monoFlat_ControlBox1.EnableHoverHighlight = false;
             this.monoFlat_ControlBox1.EnableMaximizeButton = true;
             this.monoFlat_ControlBox1.EnableMinimizeButton = true;
-            this.monoFlat_ControlBox1.Location = new System.Drawing.Point(427, 15);
+            this.monoFlat_ControlBox1.Location = new System.Drawing.Point(388, 15);
             this.monoFlat_ControlBox1.Name = "monoFlat_ControlBox1";
             this.monoFlat_ControlBox1.Size = new System.Drawing.Size(100, 25);
             this.monoFlat_ControlBox1.TabIndex = 1;
@@ -291,7 +289,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 419);
+            this.ClientSize = new System.Drawing.Size(500, 413);
             this.Controls.Add(this.monoFlat_ThemeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
