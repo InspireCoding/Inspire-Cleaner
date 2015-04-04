@@ -1,0 +1,8 @@
+c:\users\tom\documents\visual studio 2013\Projects\Inspire Cleaner\Inspire Cleaner\bin\Debug\Inspire Cleaner.exe
+c:\users\tom\documents\visual studio 2013\Projects\Inspire Cleaner\Inspire Cleaner\bin\Debug\Inspire Cleaner.pdb
+c:\users\tom\documents\visual studio 2013\Projects\Inspire Cleaner\Inspire Cleaner\obj\Debug\Inspire Cleaner.csprojResolveAssemblyReference.cache
+c:\users\tom\documents\visual studio 2013\Projects\Inspire Cleaner\Inspire Cleaner\obj\Debug\Inspire_Cleaner.Properties.Resources.resources
+c:\users\tom\documents\visual studio 2013\Projects\Inspire Cleaner\Inspire Cleaner\obj\Debug\Inspire Cleaner.csproj.GenerateResource.Cache
+c:\users\tom\documents\visual studio 2013\Projects\Inspire Cleaner\Inspire Cleaner\obj\Debug\Inspire Cleaner.exe
+c:\users\tom\documents\visual studio 2013\Projects\Inspire Cleaner\Inspire Cleaner\obj\Debug\Inspire Cleaner.pdb
+c:\users\tom\documents\visual studio 2013\Projects\Inspire Cleaner\Inspire Cleaner\obj\Debug\Inspire_Cleaner.Form1.resources
